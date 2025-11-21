@@ -7,6 +7,13 @@ This starter kit helps you quickly build:
 - 🤖 **Bots** — Build Telegram or Discord bots
 - 🌐 **Web apps** — Create interactive dashboards
 - 🧠 **AI tools** — Use ChatGPT or Claude in your own programs
+- 📝 **Text analysis** — Analyze documents, word frequency, sentiment
+- 🌐 **Web scraping** — Collect data from websites
+- 📄 **PDF processing** — Extract text from PDF documents
+- 🗺️ **Mapping** — Create interactive maps with your data
+- 🕸️ **Network analysis** — Visualize relationships and connections
+- 🎤 **Audio transcription** — Convert speech to text
+- 🖼️ **Image analysis** — Extract text and analyze images
 
 **No complicated setup required** — just run one script and start coding!
 
@@ -83,10 +90,40 @@ python-tool-starter-kit/
 │   │   ├── HOW_TO_USE.md        # ← Read this first!
 │   │   └── data_analysis.ipynb  # Full data analysis example
 │   │
-│   └── ai_templates/            # 🧠 Use ChatGPT/Claude
+│   ├── ai_templates/            # 🧠 Use ChatGPT/Claude
+│   │   ├── HOW_TO_USE.md        # ← Read this first!
+│   │   ├── chatbot.ipynb        # AI chatbot notebook
+│   │   └── simple_chatbot.py    # Command-line chatbot
+│   │
+│   ├── text_templates/          # 📝 Text analysis
+│   │   ├── HOW_TO_USE.md        # ← Read this first!
+│   │   └── simple_text_analyzer.py  # Word frequency & sentiment
+│   │
+│   ├── scraping_templates/      # 🌐 Web scraping
+│   │   ├── HOW_TO_USE.md        # ← Read this first!
+│   │   ├── simple_scraper.py    # Basic web scraper
+│   │   └── web_scraper_app.py   # Interactive scraper app
+│   │
+│   ├── pdf_templates/           # 📄 PDF processing
+│   │   ├── HOW_TO_USE.md        # ← Read this first!
+│   │   ├── simple_pdf_reader.py # Extract text from PDFs
+│   │   └── pdf_tool_app.py      # PDF tool web app
+│   │
+│   ├── mapping_templates/       # 🗺️ Mapping & GIS
+│   │   ├── HOW_TO_USE.md        # ← Read this first!
+│   │   └── simple_map.py        # Interactive map creator
+│   │
+│   ├── network_templates/       # 🕸️ Network analysis
+│   │   ├── HOW_TO_USE.md        # ← Read this first!
+│   │   └── simple_network.py    # Network visualizer
+│   │
+│   ├── audio_templates/         # 🎤 Audio transcription
+│   │   ├── HOW_TO_USE.md        # ← Read this first!
+│   │   └── simple_transcriber.py  # Speech to text
+│   │
+│   └── image_templates/         # 🖼️ Image analysis
 │       ├── HOW_TO_USE.md        # ← Read this first!
-│       ├── chatbot.ipynb        # AI chatbot notebook
-│       └── simple_chatbot.py    # Command-line chatbot
+│       └── simple_image_analyzer.py  # OCR & AI analysis
 │
 ├── data/                        # Store your files here
 │   ├── raw/                     # Put your CSV/Excel files here
@@ -113,6 +150,13 @@ Each template folder has:
 | `web_templates/` | Interactive websites | Read `HOW_TO_USE.md` |
 | `data_templates/` | Data analysis tools | Read `HOW_TO_USE.md` |
 | `ai_templates/` | AI-powered tools | Read `HOW_TO_USE.md` |
+| `text_templates/` | Text analysis & word clouds | Read `HOW_TO_USE.md` |
+| `scraping_templates/` | Web scraping tools | Read `HOW_TO_USE.md` |
+| `pdf_templates/` | PDF text extraction | Read `HOW_TO_USE.md` |
+| `mapping_templates/` | Interactive maps | Read `HOW_TO_USE.md` |
+| `network_templates/` | Network visualization | Read `HOW_TO_USE.md` |
+| `audio_templates/` | Audio transcription | Read `HOW_TO_USE.md` |
+| `image_templates/` | Image analysis & OCR | Read `HOW_TO_USE.md` |
 
 ### `src/` — Helpful Code You Can Use
 
@@ -158,6 +202,34 @@ discord.py           # Discord bot framework
 jupyter            # Jupyter notebook
 matplotlib         # Plotting
 seaborn            # Statistical visualization
+
+# Text Analysis
+wordcloud          # Word cloud generation
+textblob           # Sentiment analysis
+
+# Web Scraping
+beautifulsoup4     # HTML parsing
+lxml               # Fast XML/HTML parser
+
+# PDF Processing
+PyPDF2             # PDF text extraction
+pdfplumber         # Advanced PDF extraction
+
+# Mapping / GIS
+folium             # Interactive maps
+streamlit-folium   # Folium for Streamlit
+geopy              # Geocoding
+
+# Network Analysis
+networkx           # Network/graph analysis
+pyvis              # Interactive network viz
+
+# Image Processing
+Pillow             # Image manipulation
+pytesseract        # OCR (text from images)
+
+# Audio
+pydub              # Audio processing
 ```
 
 ---
@@ -319,6 +391,138 @@ jupyter notebook templates/ai_templates/chatbot.ipynb
 - Build conversational AI
 - Control AI responses
 - Save conversation history
+
+---
+
+### 📝 Text Analysis
+**Location:** `templates/text_templates/`
+**Read:** `HOW_TO_USE.md` in that folder
+
+**Examples to run:**
+```bash
+# Text analyzer web app
+streamlit run templates/text_templates/simple_text_analyzer.py
+```
+
+**What you'll learn:**
+- Word frequency analysis
+- Sentiment analysis
+- Create word clouds
+- Process documents
+
+---
+
+### 🌐 Web Scraping
+**Location:** `templates/scraping_templates/`
+**Read:** `HOW_TO_USE.md` in that folder
+
+**Examples to run:**
+```bash
+# Basic scraper script
+python templates/scraping_templates/simple_scraper.py
+
+# Interactive scraper app
+streamlit run templates/scraping_templates/web_scraper_app.py
+```
+
+**What you'll learn:**
+- Fetch web pages
+- Extract data from HTML
+- Build datasets from websites
+- Ethical scraping practices
+
+---
+
+### 📄 PDF Processing
+**Location:** `templates/pdf_templates/`
+**Read:** `HOW_TO_USE.md` in that folder
+
+**Examples to run:**
+```bash
+# Extract text from PDFs
+python templates/pdf_templates/simple_pdf_reader.py
+
+# PDF tool web app
+streamlit run templates/pdf_templates/pdf_tool_app.py
+```
+
+**What you'll learn:**
+- Extract text from PDFs
+- Read PDF metadata
+- Process multiple documents
+- Handle scanned documents (OCR)
+
+---
+
+### 🗺️ Mapping & GIS
+**Location:** `templates/mapping_templates/`
+**Read:** `HOW_TO_USE.md` in that folder
+
+**Examples to run:**
+```bash
+# Interactive map creator
+streamlit run templates/mapping_templates/simple_map.py
+```
+
+**What you'll learn:**
+- Create interactive maps
+- Add markers and popups
+- Visualize geographic data
+- Export maps as HTML
+
+---
+
+### 🕸️ Network Analysis
+**Location:** `templates/network_templates/`
+**Read:** `HOW_TO_USE.md` in that folder
+
+**Examples to run:**
+```bash
+# Network visualizer app
+streamlit run templates/network_templates/simple_network.py
+```
+
+**What you'll learn:**
+- Visualize relationships
+- Find important nodes
+- Analyze social networks
+- Create network graphs
+
+---
+
+### 🎤 Audio Transcription
+**Location:** `templates/audio_templates/`
+**Read:** `HOW_TO_USE.md` in that folder
+
+**Examples to run:**
+```bash
+# Audio transcriber app
+streamlit run templates/audio_templates/simple_transcriber.py
+```
+
+**What you'll learn:**
+- Convert speech to text
+- Use OpenAI Whisper API
+- Process interview recordings
+- Transcribe multiple languages
+
+---
+
+### 🖼️ Image Analysis
+**Location:** `templates/image_templates/`
+**Read:** `HOW_TO_USE.md` in that folder
+
+**Examples to run:**
+```bash
+# Image analyzer app
+streamlit run templates/image_templates/simple_image_analyzer.py
+```
+
+**What you'll learn:**
+- Extract text from images (OCR)
+- AI-powered image description
+- Read image metadata
+- Process document photos
 
 ---
 

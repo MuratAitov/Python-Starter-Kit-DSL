@@ -25,6 +25,35 @@ ipykernel==6.27.1
 matplotlib==3.8.2
 seaborn==0.13.0
 
+# Text Analysis
+wordcloud==1.9.3
+textblob==0.17.1
+
+# Web Scraping
+beautifulsoup4==4.12.2
+lxml==5.1.0
+
+# PDF Processing
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+
+# Mapping / GIS
+folium==0.15.1
+streamlit-folium==0.15.1
+geopy==2.4.1
+
+# Network Analysis
+networkx==3.2.1
+pyvis==0.3.2
+
+# Image Processing
+Pillow==10.1.0
+pytesseract==0.3.10
+
+# Audio (optional - for local transcription)
+# openai-whisper==20231117
+pydub==0.25.1
+
 # Development tools
 black==23.12.1
 flake8==7.0.0

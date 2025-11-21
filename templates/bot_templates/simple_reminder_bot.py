@@ -7,7 +7,7 @@ This example shows you how to work with user messages and scheduled tasks.
 Setup:
 1. Get token from @BotFather on Telegram
 2. Add to .env: TELEGRAM_BOT_TOKEN=your_token
-3. Run: python templates/bot_templates/simple_reminder_bot.py
+3. Run: python templates/bot_templates/simple_reminder_bot.py  
 """
 
 import sys
